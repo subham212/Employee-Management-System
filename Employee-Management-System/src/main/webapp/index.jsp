@@ -9,7 +9,7 @@
             font-family: Arial, sans-serif;
             background-color: #f2f2f2;
             display: flex;
-            justify-content: center;
+            justify-content: space-evenly;
             align-items: center;
             height: 100vh;
             margin: 0;
@@ -45,6 +45,33 @@
         .login-container button:hover {
             background-color: #45a049;
         }
+        .container {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        h1 {
+            margin-bottom: 30px;
+            font-size: 24px;
+            color: #333;
+        }
+        .button {
+            display: inline-block;
+            background: #007bff;
+            color: #fff;
+            padding: 15px 30px;
+            margin: 10px;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 8px;
+            transition: background 0.3s ease;
+        }
+        .button:hover {
+            background: #0056b3;
+        }
+        
     </style>
 </head>
 <body>
@@ -55,6 +82,12 @@
             <input type="password" id="password" name="password" placeholder="Password" required>
             <button type="submit">Login</button>
         </form>
+    </div>
+    
+     <div class="container">
+	   <h1>Employee Salary Management</h1>
+        <a href="AddSalary.jsp" class="button">Add Salary</a>
+        <a href="IdName.jsp" class="button">Update Salary</a>
     </div>
 </body>
 </html>
